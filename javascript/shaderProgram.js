@@ -9,7 +9,7 @@ class ShaderProgram {
       program: this.shaderProgram,
       attribLocations: {
         vertexPosition: gl.getAttribLocation(this.shaderProgram, 'aVertexPosition'),
-        vertexColor: gl.getAttribLocation(this.shaderProgram, 'aVertexColor')
+        textureCoord: gl.getAttribLocation(this.shaderProgram, 'aTextureCoord')
       },
       uniformLocations: {
         projectionMatrix: gl.getUniformLocation(this.shaderProgram, 'uProjectionMatrix'),
