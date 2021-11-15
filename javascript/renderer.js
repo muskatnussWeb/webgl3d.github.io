@@ -83,7 +83,7 @@ class Renderer {
 
         this.gl.activeTexture(this.gl.TEXTURE0);
         this.gl.bindTexture(this.gl.TEXTURE_2D, this.mesh.texture);
-        this.gl.uniform1i(this.shaderProgram.programInfo.uniformLocations.uSampler);
+        this.gl.uniform1i(this.shaderProgram.programInfo.uniformLocations.uSampler, 0);
         
         this.draw();
     }
