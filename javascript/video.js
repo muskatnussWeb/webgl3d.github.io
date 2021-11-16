@@ -16,25 +16,21 @@ class Video {
         video.muted = true;
         video.loop = true;
 
-        var cop = this.copyVideo;
         video.addEventListener('playing', function () {
             playing = true;
-            checkReady();
+            this.copyVideo = checkReady();
         }, true);
 
         video.addEventListener('timeupdate', function () {
             timeupdate = true;
-            checkReady();
+            this.copyVideo = checkReady();
         }, true);
 
         video.src = url;
         video.play();
 
         function checkReady() {
-            if (playing && timeupdate) {
-                cop = true;
-                console.log(cop);
-            }
+            return (playing && timeupdate);
         }
 
         return video;
