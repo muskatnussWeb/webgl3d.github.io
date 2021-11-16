@@ -18,7 +18,7 @@ function main() {
 
   function loop(){
     renderer.camera.rotate(0.03, 0.03, 0.03);
-
+    console.log(video.copyVideo);
     if(video.copyVideo){
       video.updateTexture();
     }
