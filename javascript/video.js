@@ -33,6 +33,7 @@ class Video {
         function checkReady() {
             if (playing && timeupdate) {
                 cop = true;
+                console.log(cop);
             }
         }
 
