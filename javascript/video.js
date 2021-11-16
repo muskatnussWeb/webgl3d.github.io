@@ -30,6 +30,7 @@ class Video {
         video.play();
 
         function checkReady() {
+            return true;
             if(playing && timeupdate){
                 return true;
             }
