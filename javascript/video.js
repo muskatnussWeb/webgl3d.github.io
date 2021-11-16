@@ -2,7 +2,7 @@ class Video {
 
     constructor(gl, url) {
         this.gl = gl;
-        this.copyVideo = false;
+        this.copyVideo = true;
         this.texture = this.initTexture();
         this.video = this.setupVideo(url);
     }
@@ -18,12 +18,12 @@ class Video {
 
         video.addEventListener('playing', function () {
             playing = true;
-            this.copyVideo = checkReady();
+            checkReady();
         }, true);
 
         video.addEventListener('timeupdate', function () {
             timeupdate = true;
-            this.copyVideo = checkReady();
+            checkReady();
         }, true);
 
         video.src = url;
