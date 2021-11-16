@@ -30,7 +30,12 @@ class Video {
         video.play();
 
         function checkReady() {
-            return (playing && timeupdate);
+            if(playing && timeupdate){
+                return true;
+            }
+            else{
+                return false;
+            }
         }
 
         return video;
