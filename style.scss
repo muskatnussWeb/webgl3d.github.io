@@ -1,0 +1,35 @@
+:root{
+    --canvasWidth:min(80vw, 800px);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#glcanvas{
+    
+    border: 5px solid #7f6000;
+    border-radius: 5px;
+    box-shadow: 0 0 10px 1px  black;
+    max-width:var(--canvasWidth);
+    max-height:calc(var(--canvasWidth)*0.8);
+}
+header{
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    color:#ffe6c8;
+    text-align: center;
+}
+main{
+    margin-top:2vw;
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    color:#ffe6c8;
+    text-align: center;
+}
+body{
+    background:linear-gradient(270deg, #013868, #000020);//#001E38
+    height:100vh;
+    overflow: hidden;
+}
