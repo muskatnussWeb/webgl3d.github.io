@@ -1,0 +1,58 @@
+:root {
+  --canvasWidth:min(80vw, 800px);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#glcanvas {
+  border: 5px solid #7f6000;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 0 10px 1px  black;
+          box-shadow: 0 0 10px 1px  black;
+  max-width: var(--canvasWidth);
+  max-height: calc(var(--canvasWidth)*0.8);
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #ffe6c8;
+  text-align: center;
+}
+
+main {
+  margin-top: 2vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #ffe6c8;
+  text-align: center;
+}
+
+body {
+  background: -webkit-gradient(linear, right top, left top, from(#013868), to(#000020));
+  background: linear-gradient(270deg, #013868, #000020);
+  height: 100vh;
+  overflow: hidden;
+}
+/*# sourceMappingURL=style.css.map */
