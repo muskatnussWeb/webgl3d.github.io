@@ -59,9 +59,6 @@ class Game {
         for(let i = 0; i < 4; i++){
             this.addDecor(-i*20);
             this.addDecor(-i*20);
-            this.addDecor(-i*20);
-            this.addDecor(-i*20);
-            this.addDecor(-i*20);
         }
     }
 
