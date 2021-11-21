@@ -72,7 +72,7 @@ class Game {
 
     update() {
         if(this.time-Math.floor(this.time) <= this.timeFactor/60){
-            console.log('time:',Math.floor(this.time),'factor:',this.timeFactor);
+            //console.log('time:',Math.floor(this.time),'factor:',this.timeFactor);
         }
         if(this.time*6-Math.floor(this.time*6) <= this.timeFactor/10){
            
